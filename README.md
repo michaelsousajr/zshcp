@@ -43,7 +43,7 @@ A lightweight and intuitive clipboard management plugin for Zsh that enhances yo
 use the
 
 ```bash
-  cphelp
+cphelp
 ```
 
 command in the terminal.
