@@ -40,7 +40,7 @@ A lightweight and intuitive clipboard management plugin for Zsh that enhances yo
 
 ## Usage
 
-use the
+Use the
 
 ```bash
 cphelp
