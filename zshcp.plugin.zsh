@@ -129,15 +129,13 @@ function cphistory() {
 # Help function
 function cphelp() {
     echo "Copy Plugin Commands:"
-    echo "  cpbuffer           - Copy(Yank) current command line to clipboard"
-    echo "  cpfile <file>      - Copy file content to clipboard"
-    echo "  pastefile <file>   - Create/overwrite file with clipboard contents"
-    echo "  cpfolder <folder>  - Copy specified folder"
-    echo "  pastefolder        - Create/overwrite copied folder in pwd"
-    echo "  cppwd              - Copy current directory path"
-    echo "  cphistory          - Copy last 50 commands from history"
-    echo "  cphelp             - Show this help message"
-    echo ""
-    echo "Keyboard Shortcuts:"
-    echo "  Ctrl+Y             - Copy(yank) current command line to clipboard"
+    echo "  Ctrl + Y                 - Copy(Yank) buffer to clipboard"
+    echo "  cpfile <file>            - Copy file content to clipboard"
+    echo "  pastefile <file>         - Create/overwrite file with clipboard contents"
+    echo "  cpfolder ., <folder>     - Copy specified folder, if not specified will copy in pwd"
+    echo "  pastefolder ., <folder>  - Create/overwrite copied folder, if not specified will paste in pwd"
+    echo "  cppwd                    - Copy current directory path"
+    echo "  cphistory                - Copy last 50 commands from history"
+    echo "  Ctrl + V                 - Paste clipboard contents.
+    echo "  cphelp                   - Show this help message"
 }
