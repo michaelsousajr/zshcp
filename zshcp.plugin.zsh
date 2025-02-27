@@ -94,7 +94,7 @@ function pastefolder() {
 
     # Check if destination already exists
     if [[ -e "$dest_path" ]]; then
-        echo -n "Destination '$dest_path' already exists. Overwrite? (y/N) "
+        echo -n "Destination '$dest_path' already exists. Overwrite? (Y/N) "
         read response
         echo
         if [[ ! "$response" =~ ^[Yy]$ ]]; then
