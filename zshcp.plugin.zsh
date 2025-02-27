@@ -136,6 +136,6 @@ function cphelp() {
     echo "  pastefolder ., <folder>  - Create/overwrite copied folder, if not specified will paste in pwd"
     echo "  cppwd                    - Copy current directory path"
     echo "  cphistory                - Copy last 50 commands from history"
-    echo "  Ctrl + V                 - Paste clipboard contents.
+    echo "  Ctrl + V                 - Paste clipboard contents."
     echo "  cphelp                   - Show this help message"
 }
