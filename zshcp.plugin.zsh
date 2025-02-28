@@ -39,7 +39,7 @@ function pastefile() {
     fi
 
     if [[ -f "$1" ]]; then
-        echo -n "File '$1' already exists. Overwrite? (y/N) "
+        echo -n "File '$1' already exists. Overwrite? (Y/N) "
         read response
         echo
         if [[ ! "$response" =~ ^[Yy]$ ]]; then
