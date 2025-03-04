@@ -31,10 +31,10 @@ function cpfile() {
 }
 
 # Paste clipboard content to file
-function pastefile() {
+function psfile() {
     emulate -L zsh
     if [[ -z "$1" ]]; then
-        echo "Usage: pastefile <filename>"
+        echo "Usage: psfile <filename>"
         return 1
     fi
 
@@ -71,7 +71,7 @@ function cpfolder() {
 }
 
 # Paste previously copied folder
-function pastefolder() {
+function psfolder() {
     emulate -L zsh
     if [[ ! -f "${TMPDIR:-/tmp}/.cp_folder_path" ]]; then
         echo "No folder has been copied. Use cpfolder first."
@@ -131,9 +131,9 @@ function cphelp() {
     echo "Copy Plugin Commands:"
     echo "  Ctrl + Y                 - Copy(Yank) buffer to clipboard"
     echo "  cpfile <file>            - Copy file content to clipboard"
-    echo "  pastefile <file>         - Create/overwrite file with clipboard contents"
+    echo "  psfile <file>            - Create/overwrite file with clipboard contents"
     echo "  cpfolder ., <folder>     - Copy specified folder, if not specified will copy in pwd"
-    echo "  pastefolder ., <folder>  - Create/overwrite copied folder, if not specified will paste in pwd"
+    echo "  psfolder ., <folder>     - Create/overwrite copied folder, if not specified will paste in pwd"
     echo "  cppwd                    - Copy current directory path"
     echo "  cphistory                - Copy last 50 commands from history"
     echo "  Ctrl + V                 - Paste clipboard contents."
